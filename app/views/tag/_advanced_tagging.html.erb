@@ -9,7 +9,7 @@
       <% end %>
       <div class="dropdown-divider"></div>
       <% if @node && @node.type == "page" %>
-        <a href="#" data-value="parent:">Link to a "parent" page (wikis only)</a>
+        <a class="dropdown-item" href="#" data-value="parent:">Link to a "parent" page (wikis only)</a>
         <a class="dropdown-item" href="#" data-value="style:">Add style</a>
         <a class="dropdown-item" href="#" data-value="lang:">Add Translation widget</a>
       <% else %>
