@@ -1,4 +1,4 @@
-<div class="col-md-12">
+<div class="col-lg-12">
   <h1 style="font-family:Junction Light;"><%= t('tag.index.popular_tags') %></h1>
 
   <% cache('feature_tags-header', skip_digest: true) do %> 
@@ -6,13 +6,13 @@
   <% end %>
 
   <p><%= t('tag.index.browse_popular_tags') %></p>
-  <form id="tagform" class="form-horizontal" method="GET" action="/tag/">
-  <div class="input-group">
-    <input type="search" tabindex="1" autocomplete="off" id="taginput" name="id" type="text" placeholder="Search for tags.." data-provide="typeahead" class="form-control" required="required" />
-    <span class="input-group-btn" >
-      <button type="submit" rel="tooltip" title="View content with the entered title" class="btn btn-primary">Search</button>
-    </span>
-  </div>
+  <form id="tagform" method="GET" action="/tag/">
+      <div class="input-group">
+        <input type="search" tabindex="1" autocomplete="off" id="taginput" name="id" type="text" placeholder="Search for tags.." data-provide="typeahead" class="form-control" required="required" />
+        <div class="input-group-append" >
+          <button type="submit" rel="tooltip" title="View content with the entered title" class="btn btn-primary">Search</button>
+        </div>
+      </div>
   </form>
   <script>
     jQuery(document).ready(function() {
@@ -55,7 +55,7 @@
       <tr>
         <td><i class="fa fa-tag"></i> <a href="/tag/<%= tag.name %>"><%= tag.name %></a></td>
         <td><%= tag.count %></td>
-        <td><a class="btn btn-default btn-sm" rel="popover" data-placement="right" data-html="true" data-title="<%= t('tag.show.users_following_tag') %>" data-content="<% Tag.followers(tag.name).each do |user| %><i class='fa fa-star-o'></i> <a href='/profile/<%= user.username %>'><%= user.username %></a><br /><% end %><% if Tag.follower_count(tag.name) == 0 %><i><%= t('tag.show.none') %></i><% end %>"><%= Tag.follower_count(tag.name) %> <i class="fa fa-user"></i> <span class="caret"></span></a></td>
+        <td><a class="btn btn-outline-secondary btn-sm" rel="popover" data-placement="right" data-html="true" data-title="<%= t('tag.show.users_following_tag') %>" data-content="<% Tag.followers(tag.name).each do |user| %><i class='fa fa-star-o'></i> <a href='/profile/<%= user.username %>'><%= user.username %></a><br /><% end %><% if Tag.follower_count(tag.name) == 0 %><i><%= t('tag.show.none') %></i><% end %>"><%= Tag.follower_count(tag.name) %> <i class="fa fa-user"></i> <span class="caret"></span></a></td>
         <script type="text/javascript">
           //show one popover at a time
           $('.btn').on('click', function (e) {
@@ -65,9 +65,9 @@
         <% if current_user %>
           <td>
              <% if current_user.following(tag.name) %>
-                <a rel="tooltip" title="<%= t('tag.show.unfollow') %>" class="btn btn-default btn-sm active" href="/unsubscribe/tag/<%= tag.name %>"><i class="fa fa-user-plus" aria-hidden="true"></i> <%= t('tag.show.following') %></a>
+                <a rel="tooltip" title="<%= t('tag.show.unfollow') %>" class="btn btn-outline-secondary btn-sm active" href="/unsubscribe/tag/<%= tag.name %>"><i class="fa fa-user-plus" aria-hidden="true"></i> <%= t('tag.show.following') %></a>
                 <% else %>
-                <a class="btn btn-default btn-sm" href="/subscribe/tag/<%= tag.name %>"><i class="fa fa-user-plus" aria-hidden="true"></i> <%= t('tag.show.follow') %></a>
+                <a class="btn btn-outline-secondary btn-sm" href="/subscribe/tag/<%= tag.name %>"><i class="fa fa-user-plus" aria-hidden="true"></i> <%= t('tag.show.follow') %></a>
                 <% end %>
           </td>
         <% end %>
