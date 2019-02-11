@@ -193,6 +193,10 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
+at.js@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/at.js/-/at.js-1.5.4.tgz#8fc60cc80eadbe4874449b166a818e7ae1d784c1"
+
 atoa@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/atoa/-/atoa-1.0.0.tgz#0cc0e91a480e738f923ebc103676471779b34a49"
@@ -270,7 +274,7 @@ blueimp-canvas-to-blob@>=2.0.5:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.14.0.tgz#ea075ffbfb1436607b0c75e951fb1ceb3ca0288e"
 
-blueimp-file-upload@blueimp/jQuery-File-Upload#^9.22.1:
+blueimp-file-upload@^9.28.0, blueimp-file-upload@blueimp/jQuery-File-Upload#^9.22.1:
   version "9.28.0"
   resolved "https://codeload.github.com/blueimp/jQuery-File-Upload/tar.gz/ee54fc3f57418edc6c86532cfe124a9e2c70deed"
   optionalDependencies:
@@ -316,6 +320,12 @@ bootstrap-datepicker@eternicode/bootstrap-datepicker#~1.6.0, bootstrap-datepicke
   dependencies:
     jquery ">=1.7.1"
 
+bootstrap-datepicker@~1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-datepicker/-/bootstrap-datepicker-1.8.0.tgz#c63513931e6f09f16ae9f11b62f32d950df3958e"
+  dependencies:
+    jquery ">=1.7.1 <4.0.0"
+
 bootstrap-tokenfield@sliptree/bootstrap-tokenfield#~0.12.0:
   version "0.12.1"
   resolved "https://codeload.github.com/sliptree/bootstrap-tokenfield/tar.gz/82683ff6f21ccd9920b3af8d0a8649717c8414b6"
@@ -332,13 +342,17 @@ bootstrap-typeahead@bassjobsen/Bootstrap-3-Typeahead#~4.0.0:
   version "4.0.2"
   resolved "https://codeload.github.com/bassjobsen/Bootstrap-3-Typeahead/tar.gz/7b59699d14865a3b7355c0e05f7a9cdc75f7e8e4"
 
-bootstrap@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
+bootstrap@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.0.tgz#110b05c31a236d56dbc9adcda6dd16f53738a28a"
 
 bootstrap@~3.2.0:
   version "3.2.0"
   resolved "https://codeload.github.com/twbs/bootstrap/tar.gz/c068162161154a4b85110ea1e7dd3d7897ce2b72"
+
+bootstrap@~3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.0.tgz#f8d77540dd3062283d2ae7687e21c1e691961640"
 
 bower-config@~0.4.3:
   version "0.4.5"
@@ -715,6 +729,10 @@ console-browserify@0.1.x:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-0.1.6.tgz#d128a3c0bb88350eb5626c6e7c71a6f0fd48983c"
 
+content-type-parser@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/content-type-parser/-/content-type-parser-1.0.2.tgz#caabe80623e63638b2502fd4c7f12ff4ce2352e7"
+
 contentstream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/contentstream/-/contentstream-1.0.0.tgz#0bdcfa46da30464a86ce8fa7ece565410dc6f9a5"
@@ -754,7 +772,7 @@ crossvent@1.5.4:
   dependencies:
     custom-event "1.0.0"
 
-crossvent@^1.1.0, crossvent@^1.3.1:
+crossvent@1.5.5, crossvent@^1.1.0, crossvent@^1.3.1:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/crossvent/-/crossvent-1.5.5.tgz#ad20878e4921e9be73d9d6976f8b2ecd0f71a0b1"
   dependencies:
@@ -776,7 +794,7 @@ cssom@0.3.x, "cssom@>= 0.3.0 < 0.4.0":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/cssom/-/cssom-0.3.4.tgz#8cd52e8a3acfd68d3aed38ee0a640177d2f9d797"
 
-"cssstyle@>= 0.2.29 < 0.3.0":
+"cssstyle@>= 0.2.29 < 0.3.0", "cssstyle@>= 0.2.36 < 0.3.0":
   version "0.2.37"
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
   dependencies:
@@ -819,7 +837,6 @@ cwise@^1.0.4, cwise@^1.0.7:
 cytoscape@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/cytoscape/-/cytoscape-3.3.2.tgz#7c81a5a07ddbe573044ad2a176b10e6350f58cc3"
-  integrity sha512-DkLcpbxZ1tHCT6x9RevtYuFWdxvc8ZvLXAktgBf++YGWOdkwH/6qE25Omzk2vnbZnYjf2dy81gIYay+wF0z1RQ==
   dependencies:
     heap "^0.2.6"
     lodash.debounce "^4.0.8"
@@ -925,6 +942,13 @@ domador@2.4.2:
   resolved "https://registry.yarnpkg.com/domador/-/domador-2.4.2.tgz#302a0f6dac08cc7f5b191c275f681b67636417c0"
   dependencies:
     jsdom "8.0.2"
+    string.prototype.repeat "0.2.0"
+
+domador@2.4.4:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/domador/-/domador-2.4.4.tgz#126e4c1996d0492590d45ca55791ee9f4749d4af"
+  dependencies:
+    jsdom "9.9.1"
     string.prototype.repeat "0.2.0"
 
 dup@^1.0.0:
@@ -1195,6 +1219,10 @@ flot@flot/flot#~0.7:
 font-awesome@FortAwesome/Font-Awesome#~4.5.0, font-awesome@~4.5.0, fontawesome@FortAwesome/Font-Awesome#~4.5.0:
   version "4.5.0"
   resolved "https://codeload.github.com/FortAwesome/Font-Awesome/tar.gz/fddd2c240452e6c8990c4ef75e0265b455aa7968"
+
+font-awesome@~4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-each@^0.3.2:
   version "0.3.3"
@@ -1598,7 +1626,6 @@ he@^0.5.0:
 heap@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/heap/-/heap-0.2.6.tgz#087e1f10b046932fc8594dd9e6d378afc9d1e5ac"
-  integrity sha1-CH4fELBGky/IWU3Z5tN4r8nR5aw=
 
 heatmap.js@*:
   version "2.0.5"
@@ -1650,6 +1677,12 @@ horsey@bevacqua/horsey#3.0.0:
     fuzzysearch "1.0.3"
     sell "1.0.0"
 
+html-encoding-sniffer@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/html-encoding-sniffer/-/html-encoding-sniffer-1.0.2.tgz#e70d84b94da53aa375e11fe3a351be6642ca46f8"
+  dependencies:
+    whatwg-encoding "^1.0.1"
+
 http-signature@~0.10.0:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/http-signature/-/http-signature-0.10.1.tgz#4fbdac132559aa8323121e540779c0a012b27e66"
@@ -1685,6 +1718,12 @@ ianstormtaylor-css@^0.3.1:
     component-type "^1.1.0"
     computed-style-component "^0.1.0"
     to-camel-case "^0.2.1"
+
+iconv-lite@0.4.24, iconv-lite@^0.4.13:
+  version "0.4.24"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
 
 iconv-lite@~0.2.11:
   version "0.2.11"
@@ -1885,7 +1924,7 @@ jquery.ui.widget@>=1.9:
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/jquery.ui.widget/-/jquery.ui.widget-1.10.3.tgz#2ceecfc64995412643eeb9508d2197ea93c02fb3"
 
-jquery@>=1.6, jquery@>=1.7, jquery@>=1.7.1, jquery@^3.2.1, jquery@^3.3.1, jquery@~3:
+jquery@>=1.6, jquery@>=1.7, jquery@>=1.7.1, "jquery@>=1.7.1 <4.0.0", jquery@^3.2.1, jquery@^3.3.1, jquery@~3:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
@@ -1938,6 +1977,31 @@ jsdom@8.0.2:
     tough-cookie "^2.2.0"
     webidl-conversions "^3.0.1"
     whatwg-url "^1.0.0"
+    xml-name-validator ">= 2.0.1 < 3.0.0"
+
+jsdom@9.9.1:
+  version "9.9.1"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-9.9.1.tgz#84f3972ad394ab963233af8725211bce4d01bfd5"
+  dependencies:
+    abab "^1.0.0"
+    acorn "^2.4.0"
+    acorn-globals "^1.0.4"
+    array-equal "^1.0.0"
+    content-type-parser "^1.0.1"
+    cssom ">= 0.3.0 < 0.4.0"
+    cssstyle ">= 0.2.36 < 0.3.0"
+    escodegen "^1.6.1"
+    html-encoding-sniffer "^1.0.1"
+    iconv-lite "^0.4.13"
+    nwmatcher ">= 1.3.9 < 2.0.0"
+    parse5 "^1.5.1"
+    request "^2.55.0"
+    sax "^1.1.4"
+    symbol-tree ">= 3.1.0 < 4.0.0"
+    tough-cookie "^2.3.1"
+    webidl-conversions "^3.0.1"
+    whatwg-encoding "^1.0.1"
+    whatwg-url "^4.1.0"
     xml-name-validator ">= 2.0.1 < 3.0.0"
 
 jshint@~2.3.0:
@@ -2023,7 +2087,6 @@ lazy-cache@^1.0.3:
 leaflet-blurred-location@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/leaflet-blurred-location/-/leaflet-blurred-location-1.2.5.tgz#07098bef5b1dada0876fa2081ff443a2bda4d84d"
-  integrity sha512-4YNuHWgg7JJh0MM/+qYSzU+RSyNKHH2bB6YaxxDExYEqr6J4K7fkn4yG6Mvs5p1AofzqwWCbucNLL3yVDUcZiQ==
   dependencies:
     haversine-distance "^1.1.4"
     jquery "^3.2.1"
@@ -2036,7 +2099,6 @@ leaflet-d3@Asymmetrik/leaflet-d3#^0.3.8:
 leaflet-environmental-layers@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/leaflet-environmental-layers/-/leaflet-environmental-layers-1.2.4.tgz#6e1ad03a4adf3f75b87d6a2bc87514172489b226"
-  integrity sha512-/nTy0I9jIHglyPAnPEZ0Upuwxd/hq9z++gcNe99vM9XdCDOV6yLEka97baVahb4Kg11VUmm7qYyO8BdXLdpuAA==
   dependencies:
     jquery "^3.3.1"
     leaflet "^1.3.1"
@@ -2100,7 +2162,6 @@ local-storage@1.4.2:
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
-  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash@4.13.1:
   version "4.13.1"
@@ -2181,7 +2242,7 @@ megamark@3.2.2:
     markdown-it "5.1.0"
     sluggish "1.0.1"
 
-megamark@^3.2.2:
+megamark@3.3.0, megamark@^3.2.2:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/megamark/-/megamark-3.3.0.tgz#5b1057b6a2b2c4c9ea5312b88634c3adb67fac96"
   dependencies:
@@ -2333,7 +2394,11 @@ moment@~2.18.0:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
-moment@~2.19.3, "moment@~> 2.19.3":
+moment@~2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+
+"moment@~> 2.19.3":
   version "2.19.4"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.19.4.tgz#17e5e2c6ead8819c8ecfad83a0acccb312e94682"
 
@@ -2453,7 +2518,7 @@ noty@3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/noty/-/noty-3.1.4.tgz#f9eaac9df7883921b270ec6f2869e9aeedd8071b"
 
-"nwmatcher@>= 1.3.7 < 2.0.0":
+"nwmatcher@>= 1.3.7 < 2.0.0", "nwmatcher@>= 1.3.9 < 2.0.0":
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/nwmatcher/-/nwmatcher-1.4.4.tgz#2285631f34a95f0d0395cd900c96ed39b58f346e"
 
@@ -2687,28 +2752,29 @@ psl@^1.1.24, psl@^1.1.28:
   version "1.1.29"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.1.29.tgz#60f580d360170bb722a797cc704411e6da850c67"
 
-publiclab-editor@publiclab/PublicLab.Editor#~1.3.0:
-  version "1.3.3"
-  resolved "https://codeload.github.com/publiclab/PublicLab.Editor/tar.gz/cb7c7e19611afe16cb1aed8ff45273bf098a6320"
+publiclab-editor@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/publiclab-editor/-/publiclab-editor-1.9.0.tgz#34411d5747d2108910c299113ecf078125803169"
   dependencies:
+    at.js "^1.5.4"
     backbone "~1.3.3"
-    banksy "1.0.0"
-    blueimp-file-upload "git://github.com/blueimp/jQuery-File-Upload.git#c72c93c3c005bbd0c849c2e35d01daaf7d23ee51"
-    bootstrap "~3.2.0"
-    bootstrap-datepicker "~1.6.0"
+    blueimp-file-upload "^9.28.0"
+    bootstrap "~3.4.0"
+    bootstrap-datepicker "~1.8.0"
     bootstrap-tokenfield "~0.12.0"
-    crossvent "1.5.0"
-    domador "2.4.2"
-    font-awesome "~4.5.0"
+    crossvent "1.5.5"
+    domador "2.4.4"
+    font-awesome "~4.7.0"
     grow-textarea "git://github.com/jywarren/grow.git#d54141c9456343f14cc6c935faa0915af09eb669"
-    horsey "4.2.2"
     jquery "~3"
-    megamark "3.2.2"
-    moment "~2.19.3"
-    resig-class "~0.1.0"
+    leaflet "^1.3.3"
+    leaflet-blurred-location "^1.2.5"
+    megamark "3.3.0"
+    moment "~2.24.0"
+    resig-class "~1.0.0"
     typeahead.js-browserify "~1.0.7"
     woofmark "git://github.com/jywarren/woofmark.git#xhrOptionsAltBureaucracy"
-    xhr "~2.2.0"
+    xhr "~2.5.0"
 
 publiclab-editor@~0.2.0:
   version "0.2.22"
@@ -2926,6 +2992,10 @@ resig-class@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/resig-class/-/resig-class-0.1.0.tgz#75d2a5dd9a6143d9ce61c0bc33a2b2fa848b3e45"
 
+resig-class@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/resig-class/-/resig-class-1.0.0.tgz#43e9c1d1bbea93169ca42854bf8e36b0fccb79f7"
+
 resolve@^1.1.7:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.8.1.tgz#82f1ec19a423ac1fbd080b0bab06ba36e84a7a26"
@@ -2963,7 +3033,7 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
 
-safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
+"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
@@ -3281,7 +3351,7 @@ touch@0.0.2:
   dependencies:
     nopt "~1.0.10"
 
-tough-cookie@^2.2.0:
+tough-cookie@^2.2.0, tough-cookie@^2.3.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.5.0.tgz#cd9fb2a0aa1d5a12b473bd9fb96fa3dcff65ade2"
   dependencies:
@@ -3500,9 +3570,22 @@ webidl-conversions@^3.0.0, webidl-conversions@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
 
+whatwg-encoding@^1.0.1:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/whatwg-encoding/-/whatwg-encoding-1.0.5.tgz#5abacf777c32166a51d085d6b4f3e7d27113ddb0"
+  dependencies:
+    iconv-lite "0.4.24"
+
 whatwg-url@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-1.0.1.tgz#2ad742fc419d671026376f84c80fe4f69f55ccc7"
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
+
+whatwg-url@^4.1.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-4.8.0.tgz#d2981aa9148c1e00a41c5a6131166ab4683bbcc0"
   dependencies:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
@@ -3583,6 +3666,15 @@ xhr@2.2.1:
 xhr@~2.2.0:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/xhr/-/xhr-2.2.2.tgz#2ee72571869f8686d41559a9ea286c18971435ff"
+  dependencies:
+    global "~4.3.0"
+    is-function "^1.0.1"
+    parse-headers "^2.0.0"
+    xtend "^4.0.0"
+
+xhr@~2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/xhr/-/xhr-2.5.0.tgz#bed8d1676d5ca36108667692b74b316c496e49dd"
   dependencies:
     global "~4.3.0"
     is-function "^1.0.1"
