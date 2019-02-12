@@ -7,7 +7,7 @@
 <div class="meta activity-dropdown">
   <div class="btn-group">
 
-    <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span class="node-type-filter"><%= t('dashboard._activity.all_updates') %></span>
       <span class="caret"></span>
     </button>
@@ -75,7 +75,7 @@
   <br />
 
   <div class="text-center">
-    <%= will_paginate notes, :renderer => BootstrapPagination::Rails if notes %>
+    <%= will_paginate notes, renderer: WillPaginate::ActionView::BootstrapLinkRenderer if notes %>
   </div>
 
 </div>
