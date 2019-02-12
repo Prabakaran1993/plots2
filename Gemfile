@@ -61,7 +61,7 @@ gem 'tzinfo-data', platforms: %i(mingw mswin x64_mingw jruby)
 gem 'unicode-emoji'
 gem 'whenever', require: false
 gem 'will_paginate', '>= 3.0.6'
-gem 'will_paginate-bootstrap4'
+gem 'will_paginate-bootstrap4', '~> 0.2.2'
 gem 'jquery-atwho-rails'
 gem 'lemmatizer', '~> 0.1.1'
 # To implement incoming mail processing microframework
