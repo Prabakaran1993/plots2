@@ -563,7 +563,6 @@ DEPENDENCIES
   unicode-emoji
   web-console (>= 3.3.0)
   whenever
-  will_paginate (>= 3.0.6)
   will_paginate-bootstrap4 (~> 0.2.2)
 
 RUBY VERSION
